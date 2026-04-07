@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Atop";
+    src: url(Atop-R99O3.ttf);
+}
+/*background e monitor*/
+body{
+    background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("imagens/minions-bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+
+    overflow-y: hidden ;
+    height: 100vh;
+}
+/*titulo principal da loja*/
+h1{
+    font-size: 8rem;
+    font-family: "Atop";
+    color: rgb(0, 0, 0);
+    text-align: center;
+    white-space: nowrap;
+    margin: auto;
+    text-shadow: 10px 10px 3px #906e00;
+    -webkit-text-stroke: 3px rgb(255, 196, 0)
+}
+
+/*classe inicial do minion_ea*/
+.minionEA{
+    position: absolute;
+    transform: translateY(500px);
+    left: 10%px;
+    width: 300px;
+    opacity: 0;
+    transition: 0.8s;
+/*classe de troca do minion_ea*/
+}
+.minionEA.aparecer{
+    position: absolute;
+    transform: translateY(150px);
+    opacity: 1;
+    pointer-events: none;
+/*configurando o botao do easter-egg*/
+}
+.botao-easter{
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    left: -90px;
+    transform: rotate(80deg);
+    background-image: url("imagens/mao\ miniana.png");
+    background-size: cover; 
+}
+.minion{
+    
+}
+.botaoPassarE{
+  
+}
+.minion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid rgb(255, 196, 0);
+    border-radius: 50px;
+    position: absolute;
+    left: 28vw;
+    top: 30%;
+    max-width: 300px;
+    width: ;
+    height: auto;
+}

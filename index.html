@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#F5F5F5;
+             height: 100vh;
+            
+            color: #333333;
+            display: flex;
+            align-items: center;
+            background-image: url(minions-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        main{
+            border: solid 1px#CCCCCC;
+            box-shadow: 40px -5px 80px 15px;
+            width: 400px;
+            margin: auto;
+            margin-right: 20%;
+             padding: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: #FFFFFF;
+            justify-items: center;
+            text-align: center;
+            width: 50%;
+            display: grid;
+            
+            
+            
+        }
+        input{
+            background-color:#EEEEEE ;
+            border: solid 0.1px ;
+            border-color: white;
+            border-radius: 5px;
+            height: 30px;
+            width: 180px;
+            outline: none;
+        }
+        
+        button{
+            margin: 10px;
+            margin-top:30px ;
+            background-color:#CCCCCC;
+            border-radius: 5px;
+            border: solid 0px ;
+            outline: none;
+
+                    }
+                    button:hover{
+                      
+                         transition: 0.4s; 
+                          transform: scale(1.2);
+                    }
+                    button:active{
+                        transition: 0.4s;
+                        transform: scale(1);
+                    }
+        .nome:hover{
+             transition: 0.3s ;
+             background-color: #dbd9d9;
+        }
+        nav{
+            box-shadow: -40px 5px 80px 15px;
+            background-color: rgb(242, 255, 0);
+            padding: 20px;
+           
+             flex-direction: row; 
+             width: 30%;
+             margin-left: 20%;
+             border-bottom-left-radius: 20px;
+             border-top-left-radius: 20px;
+            
+        }
+        .height{
+            height: 50vh;
+            
+        }
+        @media(max-width:901px) {
+    nav{
+        font-size: 12px;
+    }
+}
+.danav{
+   background-color: rgb(242, 255, 0);
+   border: 1px solid white;
+   padding: 10px;
+   margin: 0px;
+   width: 200px;
+
+  
+}
+button,a{
+    outline: none;
+    color: black;
+    text-decoration: none;
+}
+a{
+    outline: none;
+}
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <nav class="height">
+      <h1>
+            Bem-Vindo de volta
+        </h1>
+        <h2>Acesse sua conta agora mesmo!</h2>
+        <div style="text-align: center; margin: 0px;">
+            <button class="danav">ENTRAR</button>
+        </div>
+        
+    </nav>
+    <main class="height">
+        
+       <h1>Nome</h1> 
+       <input type="text" placeholder="Nome" class="nome">
+
+       <input type="text" placeholder="Email">
+
+       <input type="text" placeholder="Senha">
+       
+        <button onclick="minhaFuncao()">Cadastrar</button>
+<script>
+  function minhaFuncao() {
+     window.location.href = "Z/minions.html";
+  }
+</script>
+
+      
+    </main>
+</body>
+</html> 
